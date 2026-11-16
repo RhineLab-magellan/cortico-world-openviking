@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 - 2026-11-16
+
+- 修正 `describe.json` 的结构：提示词清单原来写成自造的 `promptDocs[{key,title,description,vars,body}]`，
+  现按 Coopanion 官方格式改成 `prompts[{key,title,role,content}]`，`content` 是模板原文。
+  0.1.0 的这份文件与 `pnpm check:extension` 对不上，请用 0.1.1。
+- `scripts/build-describe.mjs` 改为照官方 `describe-export.ts` 的规则生成，可重复。
+
 ## 0.1.0 - 2026-11-16
 
 首个公开版本。

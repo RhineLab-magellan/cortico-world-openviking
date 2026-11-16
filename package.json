@@ -1,6 +1,6 @@
 {
   "name": "cortico-world-openviking",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Coopanion World: 把本机 OpenViking 的记忆库接进来,能查、能写回、能按服务自己的语义删除。需要 OpenViking 0.5.3 或更高版本(已验证 0.5.3 / 0.5.4 / 0.5.4.1 / 0.5.5)。",
   "main": "./src/index.js",
