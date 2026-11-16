@@ -1,0 +1,63 @@
+{
+  "name": "cortico-world-openviking",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Coopanion World: 把本机 OpenViking 的记忆库接进来,能查、能写回、能按服务自己的语义删除。需要 OpenViking 0.5.3 或更高版本(已验证 0.5.3 / 0.5.4 / 0.5.4.1 / 0.5.5)。",
+  "main": "./src/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Magellan",
+    "url": "https://github.com/RhineLab-magellan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RhineLab-magellan/cortico-world-openviking.git"
+  },
+  "homepage": "https://github.com/RhineLab-magellan/cortico-world-openviking#readme",
+  "bugs": {
+    "url": "https://github.com/RhineLab-magellan/cortico-world-openviking/issues"
+  },
+  "keywords": [
+    "cortico-world",
+    "cortico",
+    "openviking",
+    "memory"
+  ],
+  "cortico": {
+    "kind": "world",
+    "api": 6,
+    "displayName": "OpenViking 记忆库",
+    "describe": "describe.json",
+    "tags": [
+      "external-setup",
+      "internal-state"
+    ],
+    "locales": {
+      "zh": {
+        "displayName": "OpenViking 记忆库",
+        "description": "把本机 OpenViking 的记忆库接进来:语义检索、按目录浏览、读正文、写回、以及与服务自己的 rm 完全一致的永久删除。需要先在本机跑起 OpenViking 0.5.3 或更高版本。"
+      },
+      "en": {
+        "displayName": "OpenViking Memory",
+        "description": "Connect a local OpenViking memory store: semantic search, browse by directory, read bodies, write back, and hard-delete with the same semantics as the service's own rm. Requires a local OpenViking 0.5.3 or newer."
+      }
+    }
+  },
+  "openviking": {
+    "testedWith": [
+      "0.5.3",
+      "0.5.4",
+      "0.5.4.1",
+      "0.5.5"
+    ],
+    "minimum": "0.5.3"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "src",
+    "describe.json",
+    "CHANGELOG.md"
+  ]
+}
